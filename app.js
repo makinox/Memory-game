@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid');
   const resultDisplay = document.querySelector('#result');
   let cardsChosen = [];
-  let cardsChosenId = [];
   let cardsWon = [];
 
   // Create your board
@@ -87,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     cardsChosen = [];
-    cardsChosenId = [];
     resultDisplay.textContent = cardsWon.length;
 
     if (cardsWon.length === cardArray.length / 2) {
