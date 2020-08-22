@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  preloadImages();
   sort();
   createBoard();
 });
@@ -73,6 +74,14 @@ const cardArray = [
     img: 'images/pizza.png',
   },
 ];
+
+function preloadImages() {
+  cardArray.map((el) => {
+    const preImage = new Image();
+    // preImage.onload = console.log(`${el.name} loaded`);
+    preImage.src = el.img;
+  });
+}
 
 // Check for matches
 function checkForMatch() {
