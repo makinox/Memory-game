@@ -1,15 +1,37 @@
+:root {
+  --BackgroundPrimary: #f8f9fa;
+  --BackgroundSecondary: #fff;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--BackgroundPrimary);
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.grid {
+.section-header {
+  text-align: center;
+}
+
+.section-game {
   display: flex;
-  flex-wrap: wrap;
-  height: 300px;
-  width: 400px;
+  justify-content: center;
+}
+
+.section-game .grid {
+  padding: 5px;
+  display: grid;
+  border-radius: 5px;
+  background-color: var(--BackgroundSecondary);
+  grid-template-columns: repeat(4, 1fr);
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section-game .grid img {
+  padding: 5px;
+  border-radius: 10px;
 }
