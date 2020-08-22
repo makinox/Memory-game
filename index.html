@@ -8,16 +8,20 @@
   </head>
   <body>
 
-    <article class="article-modal" id="modal">
-      <span>Modal content</span>
+    <article class="article-modal" >
+      <span class="article-modal-span" id="modal">Modal content</span>
     </article>
 
     <section class="section-header" >
-      <h3>Score: <span id="result"></span></h3>
+      <h3>Score: <span id="result">0</span></h3>
     </section>
 
     <section class="section-game">
       <div class="grid"></div>
+    </section>
+
+    <section class="article-reset">
+      <button class="article-reset-span" id="reset" onclick="start()">Restart</button>
     </section>
 
     <!-- <section>
