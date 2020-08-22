@@ -75,14 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('img');
 
     if (cardsChosen[0].name === cardsChosen[1].name) {
-      alert('You found a match');
+      showNotification('You found a match');
       cards[cardsChosen[0].id].setAttribute('src', 'images/white.png');
       cards[cardsChosen[1].id].setAttribute('src', 'images/white.png');
       cardsWon.push(cardsChosen);
     } else {
       cards[cardsChosen[0].id].setAttribute('src', 'images/blank.png');
       cards[cardsChosen[1].id].setAttribute('src', 'images/blank.png');
-      alert('Sorry, try again');
+      showNotification('Sorry, try again');
     }
 
     cardsChosen = [];
@@ -105,3 +105,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   createBoard();
 });
+
+function showNotification(modalText = 'Modal content') {
+  const modal = document.getElementById('modal');
+  modal.innerHTML = modalText;
+  modal.className = 'article-modal animation';
+  setTimeout(() => {
+    modal.className = 'article-modal';
+  }, 1000);
+}

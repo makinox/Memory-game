@@ -35,3 +35,36 @@ body {
   padding: 5px;
   border-radius: 10px;
 }
+
+.article-modal {
+  position: absolute;
+  top: 5%;
+  right: -30%;
+  display: inline-flex;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: var(--BackgroundSecondary);
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.animation {
+  animation-name: cssAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+@keyframes cssAnimation {
+  0% {
+    right: -30%;
+  }
+  30% {
+    right: 3%;
+  }
+  70% {
+    right: 3%;
+  }
+  100% {
+    right: -30%;
+  }
+}
