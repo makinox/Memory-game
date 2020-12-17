@@ -39,6 +39,7 @@ body {
 
 .game-navbar section div:first-of-type span {
   font-size: 18px;
+  width: max-content;
 }
 
 .game-navbar section div:last-of-type a {
