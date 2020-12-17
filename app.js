@@ -85,7 +85,7 @@ function preloadImages() {
 
 // Check for matches
 function checkForMatch() {
-  const cards = document.querySelectorAll('img');
+  const cards = document.querySelectorAll('.section-game img');
 
   if (cardsChosen[0].id === cardsChosen[1].id) {
     cards[cardsChosen[0].id].setAttribute('src', 'images/blank.png');
@@ -94,7 +94,9 @@ function checkForMatch() {
   } else if (cardsChosen[0].name === cardsChosen[1].name) {
     showNotification('You found a match');
     cards[cardsChosen[0].id].setAttribute('src', 'images/white.png');
+    cards[cardsChosen[0].id].removeEventListener('click', flipCard);
     cards[cardsChosen[1].id].setAttribute('src', 'images/white.png');
+    cards[cardsChosen[1].id].removeEventListener('click', flipCard);
     cardsWon.push(cardsChosen);
   } else {
     cards[cardsChosen[0].id].setAttribute('src', 'images/blank.png');
