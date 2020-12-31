@@ -1,9 +1,11 @@
-import {Navbar} from './components/index';
-import {Root} from './scripts';
+import {Charge} from './components/index';
+// import {Navbar} from './components/index';
+// import {Root} from './scripts';
 
 function initializeApp() {
-  Root();
-  Navbar();
+  Charge();
+  // Root();
+  // Navbar();
 }
 
 initializeApp();
