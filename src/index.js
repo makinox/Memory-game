@@ -1,11 +1,9 @@
-import {Charge} from './components/index';
-// import {Navbar} from './components/index';
-// import {Root} from './scripts';
+import {Charge, Navbar, Helmet} from './components/index';
 
 function initializeApp() {
+  Helmet();
+  Navbar();
   Charge();
-  // Root();
-  // Navbar();
 }
 
 initializeApp();

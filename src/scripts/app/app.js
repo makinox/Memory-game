@@ -12,6 +12,10 @@ export default function App() {
     preloadImages();
     sort();
     createBoard();
+    // document.getElementById('#reset').onclick(start);
+    const resetButton = document.getElementById('reset');
+    resetButton.onclick = start;
+    console.log(resetButton);
   });
 
   const grid = document.querySelector('.grid');
@@ -88,7 +92,6 @@ export default function App() {
   function preloadImages() {
     cardArray.map(el => {
       const preImage = new Image();
-      // preImage.onload = console.log(`${el.name} loaded`);
       preImage.src = el.img;
     });
   }
