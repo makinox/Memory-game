@@ -6,4 +6,4 @@ Used:
 
 Link to [memory!](https://memory.jesusbossa.dev/)
 
-![Image of memory](./images/preview.png)
+![Image of memory](./src/assets/images/preview.png)
