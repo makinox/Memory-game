@@ -10,7 +10,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Memory game',
-      template: './src/template/index.html',
+      template: path.resolve(__dirname, 'src/template/index.html'),
     }),
   ],
   output: {
