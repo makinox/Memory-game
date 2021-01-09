@@ -8,7 +8,7 @@
     "test": "start-server-and-test start http://localhost:3001 cy-open",
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "serve": "serve dist --single -p 3000 ",
+    "serve": "serve dist --single -p 3001",
     "watch": "webpack --watch",
     "cy-open": "cypress open",
     "cy-run": "cypress run"
