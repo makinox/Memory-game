@@ -41,7 +41,7 @@ jobs:
         run: yarn install
 
       - name: Running building
-        run: yarn build --if-present
+        run: yarn build
 
       - name: Running tests
         run: yarn cy-test
