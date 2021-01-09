@@ -4,11 +4,14 @@
   "description": "Used:",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy-test": "start-server-and-test serve http://localhost:3001 cy-run",
+    "test": "start-server-and-test start http://localhost:3001 cy-open",
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "serve": "serve dist --single -p 3000 ",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "cy-open": "cypress open",
+    "cy-run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -20,8 +23,10 @@
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",
+    "cypress": "^6.2.1",
     "html-webpack-plugin": "^4.5.0",
     "serve": "^11.3.2",
+    "start-server-and-test": "^1.11.7",
     "style-loader": "^2.0.0",
     "webpack": "^5.11.0",
     "webpack-cli": "^4.3.0",

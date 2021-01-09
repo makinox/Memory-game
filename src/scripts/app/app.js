@@ -15,7 +15,6 @@ export default function App() {
     // document.getElementById('#reset').onclick(start);
     const resetButton = document.getElementById('reset');
     resetButton.onclick = start;
-    console.log(resetButton);
   });
 
   const grid = document.querySelector('.grid');
