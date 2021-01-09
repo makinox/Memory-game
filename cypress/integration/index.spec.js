@@ -38,14 +38,9 @@ export default context('Login', () => {
     });
 
     it('On click a card the image should be different', () => {
-      cy.get('body nav div a:nth-child(3)').should('have.attr', 'target', '_blank');
-    });
-
-    it('On click a card the image should be different', () => {
       cy.get('.grid > img:first')
         .should('have.attr', 'src')
         .then(src => {
-          console.log(src);
           cy.get('.grid > img:first').click();
           cy.get('.grid > img:first').should('not.have.attr', 'src', src);
         });
