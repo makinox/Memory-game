@@ -18,10 +18,10 @@ export default function App() {
   });
 
   const grid = document.querySelector('.grid');
-  const resultDisplay = document.querySelector('#result');
+  const resultDisplay: number | any = document.querySelector('#result');
   const modal = document.getElementById('modal');
   const resetButton = document.getElementById('reset');
-  let cardsChosen = [];
+  let cardsChosen: Array<object> | any = [];
   let cardsWon = [];
 
   // Card options
@@ -145,7 +145,7 @@ export default function App() {
     for (let i = 0; i < cardArray.length; i++) {
       const card = document.createElement('img');
       card.setAttribute('src', Blank);
-      card.setAttribute('data-id', i);
+      card.setAttribute('data-id', i.toString());
       card.addEventListener('click', flipCard);
 
       grid.appendChild(card);
