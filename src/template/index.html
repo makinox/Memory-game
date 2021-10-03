@@ -12,7 +12,7 @@
 
 <body>
 
-  <nav class="game-navbar">
+  <nav>
     <section>
       <div>
         <!-- <img src="/images/Logo.svg" alt="Logo snake"> -->
@@ -36,18 +36,17 @@
     <span class="article-modal-span" id="modal">Modal content</span>
   </article>
 
-  <section class="section-header">
-    <h3>Score: <span id="result">0</span></h3>
+  <section class="section-header text-center">
+    <h3 class="inline-block" >Score: <span id="result">0</span></h3>
   </section>
 
-  <section class="section-game">
+  <section class="section-game flex justify-center">
     <div class="grid"></div>
   </section>
 
-  <section class="article-reset">
-    <button class="article-reset-span" id="reset" >Restart</button>
+  <section class="article-reset flex justify-center">
+    <button id="reset" style="display: none;" >Restart</button>
   </section>
 </body>
-<!-- <script src="app.js" charset="utf-8"></script> -->
 
 </html>
