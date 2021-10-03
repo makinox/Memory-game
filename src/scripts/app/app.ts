@@ -12,7 +12,6 @@ export default function App() {
     preloadImages();
     sort();
     createBoard();
-    // document.getElementById('#reset').onclick(start);
     const resetButton = document.getElementById('reset');
     resetButton.onclick = start;
   });
@@ -121,7 +120,7 @@ export default function App() {
 
     if (cardsWon.length === cardArray.length / 2) {
       resultDisplay.textContent = 'Congratulations! You found them all';
-      resetButton.style.display = 'block';
+      resetButton.style.display = 'inline-flex';
     }
   }
 
