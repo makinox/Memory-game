@@ -1,5 +1,6 @@
 import {TopBar, FluidContainer} from '@makinox/makinox-ui';
 import Icon from '../../assets/images/Logo.svg';
+import './navbar.css';
 
 export default function navbar() {
   const navbarIcon = new Image();
@@ -34,6 +35,5 @@ export default function navbar() {
     el.style.cursor = 'pointer';
     el.style.fontSize = '20px';
     el.style.margin = '0 2px';
-    // el.onmouseover
   });
 }
