@@ -1,4 +1,4 @@
-import {TopBar, FluidContainer} from '@makinox/makinox-ui';
+import {TopBar, FluidContainer, ButtonOutline} from '@makinox/makinox-ui';
 import Icon from '../../assets/images/Logo.svg';
 import './navbar.css';
 
@@ -31,9 +31,12 @@ export default function navbar() {
 
   navbarRef.forEach((el: HTMLElement) => {
     el.style.transition = 'all 0.3s ease 0s';
-    el.style.color = '#607d8b';
+    el.style.color = 'rgb(var(--light-primary))';
     el.style.cursor = 'pointer';
     el.style.fontSize = '20px';
     el.style.margin = '0 2px';
   });
+
+  const resetButton = document.querySelector('#reset');
+  resetButton.className = ButtonOutline({});
 }

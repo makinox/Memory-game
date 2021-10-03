@@ -1,8 +1,8 @@
 :root {
-  --light-primary: 4, 166, 183;
-  --light-primary-variant: 91, 216, 234;
-  --light-secondary: 1, 184, 110;
-  --light-secondary-variant: 90, 235, 157;
+  --light-primary: 66, 56, 255;
+  --light-primary-variant: 135, 102, 254;
+  --light-secondary: 238, 65, 10;
+  --light-secondary-variant: 255, 118, 60;
   --light-background: 255, 255, 255;
   --light-surface: 245, 245, 246;
   --light-error: 255, 22, 23;
